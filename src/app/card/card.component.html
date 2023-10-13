@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title text-muted text-uppercase text-center">{{plans.plan}}</h5>
+        <h6 class="card-price text-center">${{plans.price}}<span class="period">/month</span></h6>
+        <hr>
+        <ul class="fa-ul">
+            <li *ngFor="let x of plans.items;index as idx">
+                <div *ngIf="plans.ticks[idx]==1">
+                    <i class="fas fa-check p-2"></i>{{x}}
+                </div>
+                <div *ngIf="plans.ticks[idx]==0" class="text-muted">
+                    <i class="fas fa-times p-2"></i>{{x}}
+                </div>
+            </li>
+            <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>{{plans.items[0]}}</strong>
+            </li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span>{{plans.items[1]}}</li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span>{{plans.items[2]}}</li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span>{{plans.items[3]}}</li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span>{{plans.items[4]}}</li>
+            <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>{{plans.items[5]}}</li>
+            <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>{{plans.items[6]}}</li>
+            <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>{{plans.items[7]}}</li> -->
+        </ul>
+        <div class="d-grid">
+            <a href="#" class="btn btn-primary text-uppercase">Button</a>
+        </div>
+    </div>
+</div>

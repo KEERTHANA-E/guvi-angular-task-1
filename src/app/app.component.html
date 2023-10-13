@@ -1,0 +1,11 @@
+<section class="container pricing py-5">
+    <div class="container row">
+      <div class="col" *ngFor="let plan of plans">
+        
+        <!-- Free Tier -->
+        <app-card [plans] = "plan"></app-card>
+        <!-- <app-card class="col" [plans] = "plans[1]"></app-card>
+        <app-card class="col" [plans] = "plans[2]"></app-card> -->
+      </div>
+    </div>
+  </section>
